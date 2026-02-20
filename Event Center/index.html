@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Note</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg">
+</head>
+<body>
+    
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">☰ </div>
+
+        <nav id=""navMenu" class="nav-menu">
+            <ul>
+                <li><a class="active" href="index.html" class="active">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>    
+        </nav>        
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to The Velvet Note</h1>
+            <p>Experience live music in an intimate, cozy setting at The Velvet Note, where world‑class music meets handcrafted cocktails, delicious food, and unforgettable vibes.</p>
+            <a class="btn" href="booking.html">Book Your Table Now</a>
+        </section>
+        
+        <section class="UE">
+            <h2>Upcoming Events</h2>
+          <div class="events-container">
+                <article class="event-card">
+                    <h3>Soulful Sundays</h3> 
+                    <p>Every Sunday, immerse yourself in the soulful sounds of our live jazz performances.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Unplugged Thursdays</h3>
+                    <p>Join us every Thursday for an intimate acoustic night featuring local artists.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Friday Night Groove</h3>
+                    <p>Kick off your weekend with our energetic Friday Night Groove, showcasing a mix of funk, R&B, and soul.</p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Saturday Jazz Sessions</h3>
+                    <p>Experience the best of jazz every Saturday night with our rotating lineup of talented musicians.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy;2026 The Velvet Note</p>
+    </footer>
+
+    <script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("open");
+}
+</script>
+
+
+</body>
+</html>

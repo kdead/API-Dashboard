@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact The Velvet Note</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="images/favicon.jpeg" />
+  </head>
+
+  <body>
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Menu</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-contact">
+      <div class="hero-overlay">
+        <h1>Get in Touch</h1>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <section class="contact-intro">
+        We'd love to hear from you! Whether you have questions about our events,
+        want to make a reservation, or just want to say hello, feel free to
+        reach out to us.
+      </section>
+
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>
+            <strong>Address:</strong> 123 Music Lane, Park Forest, TN 60466
+          </li>
+          <li><strong>Phone:</strong> (555) 123-4567</li>
+          <li><strong>Email:</strong> info@velvetnote.com</li>
+        </ul>
+      </section>
+
+      <section class="business-hours">
+        <h2>Business Hours</h2>
+        <ul>
+          <li><strong>Monday - Wednesday:</strong> 4 PM - 12 AM</li>
+          <li><strong>Thursday - Saturday:</strong> 4 PM - 2 AM</li>
+          <li><strong>Sunday:</strong> 4 PM - 12 AM</li>
+        </ul>
+      </section>
+
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_contact.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy;2026 The Velvet Note</p>
+    </footer>
+  </body>
+</html>

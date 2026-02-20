@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Night Starts Here</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a class="active" href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+        <section class="booking-hero">
+         <div class="hero-overlay">
+          <h1>Reserve Your Experience</h1>
+            <p>
+                Book your table at The Velvet Note and get ready for an unforgettable night of live music, handcrafted cocktails, and vibrant vibes. Whether you're planning a romantic evening, a night out with friends, or a special celebration, our intimate lounge is the perfect setting to create lasting memories. Reserve your spot now and let the music set the tone for an extraordinary experience.</p>
+         </div>    
+        </section>
+
+<section class="booking-form">
+    <h2>Book Your Table</h2>
+        <form action="submit_booking.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required /><br /><br />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required /><br /><br />
+
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="20"
+            required
+          /><br /><br />
+
+          <input type="submit" value="Book Now" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What's Happening This Week</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav id="navMenu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="events.html">Events</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-events">
+      <div class="hero-overlay">
+        <h1>Upcoming Events</h1>
+        <p>Live Music • Soulful Vibes • Intimate Nights</p>
+      </div>
+    </section>
+
+    <main>
+      <section class="events-content">
+        <h1>What's Happening This Week at The Velvet Note</h1>
+        <p>
+          Discover the vibrant lineup of live music and events happening this
+          week at The Velvet Note. From soulful jazz nights to energetic funk
+          sessions, there's something for every music lover to enjoy. Check out
+          our schedule below and plan your visit to experience unforgettable
+          vibes and world-class performances.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Event</th>
+              <th>Description</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sunday</td>
+              <td>Soulful Sundays</td>
+              <td>
+                Immerse yourself in the soulful sounds of our live jazz
+                performances every Sunday.
+              </td>
+              <td>8 PM - Midnight</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Unplugged Thursdays</td>
+              <td>
+                Join us for an intimate acoustic night featuring local artists
+                every Thursday.
+              </td>
+              <td>8 PM - Midnight</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>Friday Night Groove</td>
+              <td>
+                Kick off your weekend with our energetic Friday Night Groove,
+                showcasing a mix of funk, R&B, and soul.
+              </td>
+              <td>8 PM - 2 AM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>Saturday Jazz Sessions</td>
+              <td>
+                Experience the best of jazz every Saturday night with our
+                rotating lineup of talented musicians.
+              </td>
+              <td>8 PM - 2 AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>©2026 The Velvet Note</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
