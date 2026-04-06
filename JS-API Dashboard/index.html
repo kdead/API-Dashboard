@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Daily Dashboard</h1>
+      <p>Your daily hub for helpful information and tools.</p>
+    </header>
+
+    <main class="dashboard">
+      <section class="card" id="weather-card">
+        <h2>Weather</h2>
+        <input type="text" id="city-input" placeholder="Enter a city" />
+        <button id="weather-btn">Get Weather</button>
+        <div id="weather-result"></div>
+      </section>
+
+      <section class="card" id="github-card">
+        <h2>Github Profile</h2>
+        <input
+          type="text"
+          id="github-input"
+          placeholder="Enter GitHub username"
+        />
+        <button id="github-btn">Search User</button>
+        <div id="github-result"></div>
+      </section>
+
+      <section class="card" id="joke-card">
+        <h2>Joke of the Day</h2>
+      </section>
+
+      <section class="card" id="quote-card">
+        <h2>Quote of the Day</h2>
+      </section>
+
+      <section class="card" id="radio-card">
+         <h2>Radio Browser</h2>
+         <input type="text" id="radio-input" placeholder="Search by station, genre, or country" />
+         <button id="radio-btn">Search Stations</button>
+         <div id="radio-result"></div>
+      </section>
+      
+      <section class="card" id="food-card">
+         <h2>Food Report of the Day</h2>
+         <button id="food-btn">Load Food Report</button>
+         <div id="food-result"></div>
+      </section>      
+
+      <section class="card" id="fact-card">
+        <h2>Fact of the Day</h2>
+      </section>
+     
+      <section class="card" id="hashnode-card">
+        <h2>Dev News</h2>
+        <button id="hashnode-btn">Load Dev News</button>
+        <div id="hashnode-result"></div>
+      </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
